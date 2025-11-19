@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P & A Lab Signup</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Create Account</h2>
+
+        <form action="../php/signup.php" method="POST">
+            
+            <label>Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter full name" required>
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email address" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" placeholder="Re-enter password" required>
+
+            <label>Role</label>
+            <select name="role" required>
+                <option value="staff" selected>Staff</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit" class="btn">Sign Up</button>
+
+            <div class="form-link">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
