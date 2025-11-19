@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard - P&A Lab</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+    <h2>P&A LAB | Staff</h2>
+
+    <ul class="menu">
+        <li onclick="loadPage('dashboard')">Dashboard</li>
+        <li onclick="loadPage('testRequests')">Patient Test Requests</li>
+        <li onclick="loadPage('labResults')">Laboratory Results</li>
+        <li onclick="loadPage('inventory')">Inventory Management</li>
+        <li onclick="loadPage('transactions')">Transaction Records</li>
+    </ul>
+</div>
+
+<div class="main">
+    <div class="topbar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <h2>Staff Dashboard</h2>
+        <button class="logout-btn">Logout</button>
+    </div>
+
+    <div id="contentArea" class="content">
+        <h2>System Overview</h2>
+
+        <div class="cards">
+            <div class="card"><h3>Pending Test Requests</h3> <p>Loading...</p></div>
+            <div class="card"><h3>Completed Lab Results</h3> <p>Loading...</p></div>
+            <div class="card"><h3>Low Stock Supplies</h3> <p>Loading...</p></div>
+            <div class="card"><h3>Today's Transactions</h3> <p>Loading...</p></div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/dashboard.js"></script>
+</body>
+</html>
